@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Desktop\\prova2°B\\API_Copa\\API_Copa.csproj": {}
+    "C:\\Users\\Gagliassi\\Desktop\\2Bimestre-Prova\\API_Copa\\API_Copa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Desktop\\prova2°B\\API_Copa\\API_Copa.csproj": {
+    "C:\\Users\\Gagliassi\\Desktop\\2Bimestre-Prova\\API_Copa\\API_Copa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\prova2°B\\API_Copa\\API_Copa.csproj",
+        "projectUniqueName": "C:\\Users\\Gagliassi\\Desktop\\2Bimestre-Prova\\API_Copa\\API_Copa.csproj",
         "projectName": "API_Copa",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\prova2°B\\API_Copa\\API_Copa.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\prova2°B\\API_Copa\\obj\\",
+        "projectPath": "C:\\Users\\Gagliassi\\Desktop\\2Bimestre-Prova\\API_Copa\\API_Copa.csproj",
+        "packagesPath": "C:\\Users\\Gagliassi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gagliassi\\Desktop\\2Bimestre-Prova\\API_Copa\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Gagliassi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

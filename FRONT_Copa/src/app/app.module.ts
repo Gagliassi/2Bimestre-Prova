@@ -19,10 +19,11 @@ import { FormsModule } from "@angular/forms";
 import { CadastrarSelecaoComponent } from './components/pages/selecao/cadastrar-selecao/cadastrar-selecao.component';
 import { CadastrarJogoComponent } from './components/pages/jogo/cadastrar-jogo/cadastrar-jogo.component';
 import { ListarJogoComponent } from './components/pages/jogo/listar-jogo/listar-jogo.component';
+import { ListarSelecaoComponent } from "./components/pages/selecao/listar-selecao/listar-selecao.component";
 import { PalpitarJogoComponent } from './components/pages/jogo/palpitar-jogo/palpitar-jogo.component';
 
 @NgModule({
-  declarations: [AppComponent, CadastrarSelecaoComponent, CadastrarJogoComponent, ListarJogoComponent, PalpitarJogoComponent],
+  declarations: [AppComponent, CadastrarSelecaoComponent, CadastrarJogoComponent, ListarJogoComponent, ListarSelecaoComponent, PalpitarJogoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

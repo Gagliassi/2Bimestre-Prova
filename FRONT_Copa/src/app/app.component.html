@@ -11,6 +11,10 @@
         <mat-icon class="icon">add</mat-icon>
         Cadastrar Seleção
       </a>
+      <a mat-list-item routerLink="/pages/selecao/listar">
+        <mat-icon class="icon">sports_soccer</mat-icon>
+        Listar Seleções
+      </a>
       <a mat-list-item routerLink="/pages/jogo/cadastrar">
         <mat-icon class="icon">format_list_bulleted_add</mat-icon>
         Cadastrar Jogos
@@ -20,11 +24,8 @@
         Listar Jogos
       </a>
     </mat-nav-list>
-    <!-- Links -->
   </mat-sidenav>
   <mat-sidenav-content class="content">
-    <!-- Conteúdo -->
-    <!-- É aqui que os componentes vão entrar -->
     <router-outlet> </router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

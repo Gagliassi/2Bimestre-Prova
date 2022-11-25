@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace API_Copa.Migrations
 {
-    public partial class Initial : Migration
+    public partial class migracaoFinal : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,9 +27,8 @@ namespace API_Copa.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    SelecaoAId = table.Column<int>(type: "INTEGER", nullable: true),
-                    SelecaoBId = table.Column<int>(type: "INTEGER", nullable: true),
-                    CriadoEm = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    SelecaoAId = table.Column<int>(type: "INTEGER", nullable: false),
+                    SelecaoBId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -39,13 +38,13 @@ namespace API_Copa.Migrations
                         column: x => x.SelecaoAId,
                         principalTable: "Selecoes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Jogos_Selecoes_SelecaoBId",
                         column: x => x.SelecaoBId,
                         principalTable: "Selecoes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

@@ -22,13 +22,10 @@ namespace API_Copa.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("CriadoEm")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("SelecaoAId")
+                    b.Property<int>("SelecaoAId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("SelecaoBId")
+                    b.Property<int>("SelecaoBId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -61,11 +58,15 @@ namespace API_Copa.Migrations
                 {
                     b.HasOne("API_Copa.Models.Selecao", "SelecaoA")
                         .WithMany()
-                        .HasForeignKey("SelecaoAId");
+                        .HasForeignKey("SelecaoAId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("API_Copa.Models.Selecao", "SelecaoB")
                         .WithMany()
-                        .HasForeignKey("SelecaoBId");
+                        .HasForeignKey("SelecaoBId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("SelecaoA");
 

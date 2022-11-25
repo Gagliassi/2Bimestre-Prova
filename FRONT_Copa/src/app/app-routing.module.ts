@@ -4,7 +4,7 @@ import { CadastrarSelecaoComponent } from "./components/pages/selecao/cadastrar-
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { PalpitarJogoComponent } from "./components/pages/jogo/palpitar-jogo/palpitar-jogo.component";
-
+import { ListarSelecaoComponent } from "./components/pages/selecao/listar-selecao/listar-selecao.component";
 const routes: Routes = [
   {
     path: "pages/selecao/cadastrar",
@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: "pages/jogo/listar",
     component: ListarJogoComponent,
+  },
+  {
+    path: "pages/selecao/listar",
+    component: ListarSelecaoComponent,
   },
 ];
 
